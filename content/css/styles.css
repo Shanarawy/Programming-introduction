@@ -1,0 +1,197 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding:0px;
+    margin: 0px;
+    background-color: rgb(180, 180, 180);
+    font-family:'Segoe UI",Arial,sans-serif'; 
+    
+}
+h1{
+    margin: 0px;
+}
+ul{
+    list-style-type: none;
+    padding-right: 15px;
+}
+h3{
+    margin: 0px;
+}
+*{
+    box-sizing:border-box;
+}
+nav::-webkit-scrollbar{
+    width:15px
+}
+/* media queries for responsive */
+
+/* for desktop */
+@media only screen and (min-width:768px){
+    .navigation{
+        width:300px;
+        display:block;
+    }
+    .container{
+        padding:50px 320px 20px 20px;
+    }
+    p{
+        font-size: 18px;
+    }
+    #times,#bar{
+        display: none;
+    }
+    
+}
+/* for tablets */
+@media only screen and  (max-width:768px){
+    .navigation{
+        display:none;
+    }
+    .container{
+        padding:50px 20px 20px 20px;
+    }
+    #times,#bar{
+        display: block;
+    }
+
+    
+}
+/* for mobile */
+@media only screen and (max-width:600px){
+    .navigation{
+        display:none;
+    }
+    
+    .container{
+        padding:50px 20px 20px 20px;
+    }
+    #times,#bar{
+        display: block;
+    }
+
+}
+
+/* navigation bar style */
+.upper-nav{
+    height: 60px;
+    background-color: #000;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    border: 3px solid #fff;
+    transition: ease 1s;
+     
+}
+.logo{
+   
+    position: fixed;
+    padding: 20px;
+    font-size: 18px;
+    top:0px;
+    left: 0px;
+    color:#fff;
+
+}
+#bar{
+    position: fixed;
+    right: 0;
+    top:0px;
+    padding:20px;
+
+}
+#times{
+    position: fixed;
+    right: 0;
+    top:0px;
+    padding:5px;
+}
+.navigation{
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    padding:20px 10px 20px 10px;
+    background-color: #000;
+    color:#fff;
+    overflow-y: scroll;
+    z-index: 100;
+    border-left: 3px solid #fff;
+    transition:  ease 3s;
+    
+}
+
+
+.address{
+    text-align: center;
+    width: 100%;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    margin-top: 20px;
+    background-color: rgb(180, 180, 180) ;
+}
+
+a{
+    text-decoration: none;
+}
+ul li  h3 {
+    color:#fff;
+    padding:10px 0px 8px 16px;
+}
+li  h3:hover{
+    background-color: rgb(180, 180, 180) ;
+    color: #000;
+}
+
+/* page content styles */
+.container{
+    
+    width: 100%;
+    position: relative;
+    
+}
+
+.content{
+    margin:0px 0px 50px 0px;
+    padding-top: 100px;
+}
+
+.content-line{
+    width:75%;
+    margin: auto;
+    background-color: #000;
+    height: 2px;
+}
+.image-box{
+    margin-top: 10px;
+    display: flex;
+    
+}
+.responsive{
+    width: 50%;
+    height: auto;
+   padding: 5px;
+   text-align: center;
+    display: flex;
+    
+}
+.active{
+    border-left:3px solid #fff;
+  
+}
+.link{
+    
+    width: 50%;
+    margin: auto;
+}
+.exp
+{
+   border:2px solid black; 
+    
+}
+.example{
+    
+    font-size: 30px;
+    font-weight: 700;
+}
